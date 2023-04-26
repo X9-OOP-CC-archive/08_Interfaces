@@ -12,15 +12,25 @@ public class App {
         pollObj(queen);
         pollObj(worker);
         pollObj(drone);
+        output("---------------------------");
         pollObj(bird);
 
     }
 
-   // 2. Variante - Polymorphie
+   // Polymorphie Bee(s)
     private static void pollObj(HoneyBee obj) {
         output(obj.doYourJob());
         output(obj.fly());
     }
+
+    // Überladen für Bird(s)
+    private static void pollObj(Bird obj) {
+        output(obj.hasFeathers());
+        output(obj.fly());
+    }
+
+
+
 
     private static void output(String outputStr) {
         System.out.println(outputStr);

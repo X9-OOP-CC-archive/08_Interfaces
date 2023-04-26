@@ -1,5 +1,8 @@
 package com.cc.java;
 
+import com.cc.java.bees.*;
+import com.cc.java.birds.Bird;
+
 public class App {
     
     public static void main(String[] args) {
@@ -12,7 +15,9 @@ public class App {
         pollObj(queen);
         pollObj(worker);
         pollObj(drone);
+
         output("---------------------------");
+
         pollObj(bird);
 
     }

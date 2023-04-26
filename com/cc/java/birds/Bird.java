@@ -1,4 +1,7 @@
-package com.cc.java;
+package com.cc.java.birds;
+
+import com.cc.java.interfaces.Flyable;
+import com.cc.java.interfaces.Ifeathers;
 
 public class Bird implements Flyable,Ifeathers{
 
